@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="css/fti.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> <!-- INTRO SECTION-->
+					<section> <!-- Title -->
+						<h1>A.I.</h1>
+						<h1 class="fragment" data-fragment-index="0"> Artistic Intelligence </h1>
+						<h3 > Kasper Jordaens</h3>
+						<!-- <img class="r-stretch" src="img/blank.png" style="height: 177px; width: 177px;"> -->
+						
+						<h6>FTI slotevent 24-03-24</h6>
+						<img class="kaoslogo" src="img/kaotec.png">
+					</section>
+					<section > <!-- Teletext -->
+						<img class="r-stretch" src="img/teletext.jpg" />
+						<h1 class="fragment " data-fragment-index="0">artist</h1>
+						<h2 class="fragment " data-fragment-index="1">research engineer</h2>
+						<aside class="notes">
+							- data all my life
+						</aside>				
+					</section>
+				</section>
+				<section>
+					<!-- VRAAG -->
+					<section> 
+						VRAAG: Kan kunstmatige intelligentie creatief zijn?
+					</section>
+					 <!-- ASSUMPTION - KASPAROV --> 
+					<section data-background-image="img/garyblue.jpg">
+						<h1>KASPAROV</h1> 
+						<H5>vs</H5> 
+						<H1>deep blue</H1>
+						<aside class="notes">
+							Mensen zijn slim <br>
+							Computers zijn dom, maar ze kunnen zich ongelooflijk goed focussen op zeer repetitieve taken en deze heel snel uitvoeren. <br>
+							Als je computers de juiste taak geeft, is er geen mens die die computer nog kan verslaan… dat is al even aan de gang
+							Verslagen door een uit de kluiten gewassen rekenmachine<br>
+							2018 AI beats stockfish (best open source chess engine) <a href="https://www.theringer.com/tech/2018/11/8/18069092/chess-alphazero-alphago-go-stockfish-artificial-intelligence-future"> alphago beats chess</a> <br>
+							Chess = unsolved mathematical problem (maybe quantum computing?)
+						</aside> 
+					</section>
+					<!-- ACCELERATE - Alt Facts -->
+					<section> 
+						<img class="r-stretch" src="img/altfact-min.gif" />
+						<h1>Alternative Facts</h1>
+						<h4>2023</h4>
+						<aside class="notes">
+							Niet alleen past die rekenmachine ondertussen in uw <b>broekzak</b>, we zijn er ook in geslaagd om al die machines met een enorme efficiëntie aan elkaar te <b>verbinden</b>. <br>
+							En ondertussen weten we hoe we zeer efficiënt neurale netwerken dingen kunnen leren.
+							Deze technologie wordt momenteel al zeer succesvol ingezet op allerlei manieren, in de <b>gezondheidszorg</b>, in de <b>productieketens</b>, het maken van <b>fake news</b>, ...
+						</aside>
+					</section>
+					<!-- RESEARCH - Bots Are Great -->
+					<section> 
+						<h2 class="">Bots are great</h2>
+						<img class="r-stretch " src="img/e18.gif" style="height: 474px; width: 842.667px;">
+						
+						<h6 class="fragment visible current-fragment" data-fragment-index="0">if you collaborate</h6>
+						<aside class="notes">
+							Bovendien doen we al meer dan 50 jaar onderzoek naar AI en ondertussen begint dat wat op te leveren. De vooruitgang die we op ander computerwetenschappelijk gebied geboekt hebben (en waarvoor we onszelf als Vlamingen op de borst mogen kloppen) heeft ervoor gezorgd dat we de laatste jaren een enorme versnelling hebben geboekt.
+							We besteden met veel plezier taken uit aan robots. Taken die we niet graag of niet zo precies doen. En we doen dat soms om de verkeerde reden. Technology can solve everything… what could possibly go wrong. Dit geeft alvast een antwoord op de vraag “kan een computer taak X doen?” Het antwoord is wellicht wel, al is het niet perse een goed idee…
+							
+
+						</aside>
+					</section>
+				</section>
+				<section>
+					<!-- VRAAG Hoe denkt Computer-->
+					<section>
+						VRAAG: HOE DENKT EEN COMPUTER?
+					</section>
+					<!-- INTERPRETATION 1 -->	
+					<section>
+						<h1>200M moves/sec</h1> 
+						<H5>vs</H5> 
+						<H1>2 moves/sec</H1>
+						<aside class="notes">
+							Schaken is een interessant computerprobleem, en IBM wist veel aandeelwaarde te halen uit het Deep Blue verhaal. Maar is het ook een creatief probleem? Als je het vergelijkt met bv muziek bestaat schaken uit een heel duidelijke set regels. Heel interessant voor een algoritmische  (niet AI aanpak). Deep Blue 200 Million moves/sec, Kasparov 2… en toch waren ze aan elkaar gewaagd. Was Deep Blue Creatief?
+							funfact, er zat een bug in deep blue, in de 44th move deed hij iets raar... iets onverwachts. Kasparov dacht even dat het intelligentie was…							
+						</aside>
+					</section>
+					<!-- INTERPRETATION 2 -->
+					<section>
+						<div class="r-stack">
+							<h1 class="fragment fade-out">Chess</h1> 
+							<h1 class="fragment fade-in-then-out">10^120</h1> 
+							<h1 class="fragment fade-in">10^44</h1> 
+						</div>
+						<H5>vs</H5> 
+						<div class="r-stack">
+							<h1 class="fragment fade-out">Music</h1>
+							<h1 class="fragment fade-in-then-out">10^12</h1>
+							<h1 class="fragment fade-in-then-out">10^12 * 10^8</h1>
+							<h1 class="fragment fade-in-then-out">10^12 * 10^8 * X * ...</h1>
+							<h1 class="fragment fade-in-then-out">10^xyz / ???</h1>
+						</div>
+						<aside class="notes">
+							<a href="https://en.wikipedia.org/wiki/Shannon_number">Shannon Number - 10^120</a>
+							<a href="https://github.com/tromp/ChessPositionRanking">John Tromp - 10^44</a>
+
+							Maar voor een realistische inschatting van de complexiteit van schaken kijk ik graag even naar de wiskundigen die dat werk al voor me deden.
+							aantal mogelijk schaakspellen.
+							Voor Muziek ligt dat wel even anders, Als je kijkt naar alleen het aantal noten die je op een 12-tonige schaal in enkele maten krijgt en daar de combinatie van bekijkt zit je lang niet zo hoog. Maar als je daar enkele andere parameters aan toevoegt, zoals ritme, polyfonie, variatie en het feit dat er geen vast doel is bij muziek (de andere koning schaakmat zetten) dan kom je aan een complexiteit die vele malen hoger is. Maar dan komt daarbij het probleem dat je eigenlijk een esthetihische keuze moet maken, een gevoel krijgen...
+							Gaan we dat oplossen met AI? Is creeren gewoon (heel veel) proberen?
+
+						</aside>
+					</section>
+					<!-- CREATION - FlemischRavingMasters -->
+					<section> 
+						<div class="third">
+							<video data-autoplay src="img/FlemishRavingMasters.mp4"></video>
+							<q class="normalfont" >Flemisch Raving Masters - 2023</q>
+						</div>	
+						<div class="twothird normalfont"> 
+							<p class="fragment">
+								<q>The secret to creativity is knowing how to hide your sources
+								</q><br>
+								<span class="fragment">
+									Albert Einstein
+								</span>
+							</p>
+							<p class="fragment">
+								<q>If you steal from one author, it’s plagiarism,<br> 
+									if you steal from many, it’s research. 
+								</q><br> 
+									Wilson Mizner
+							</p>
+							<p class="fragment">
+								<q>If I have seen further than others, <br>
+								it is by standing upon the shoulders of giants.
+								</q><br> 
+									Isaac Newton
+							<p class="fragment">
+								<q>Good artists copy, great artists steal.
+								</q><br>
+									Pablo Picasso
+							</p>
+
+						</div>
+						<aside class="notes">
+							In het woord creatief zit creatie. Een hele categorie AI houd zich ook bezig met het creëren van tekst, geluid, beeld, muziek… Generative AI 
+							Elk nieuw model of nieuw algoritme kan iets nieuws of voegt iets toe waardoor de kwaliteit verbetert. Maar die modellen doen momenteel vooral veel van hetzelfde, ze worden getraind op bestaande data en er zit dus altijd bronmateriaal waarop die modellen zich baseren. Hoewel dit extreem gereduceerd is, is het wel daar dat het model de mosterd haalt. Er zijn dus artiesten die niet in een model opgenomen willen worden, hoewel dat model strikt gezien nooit een artiest kopieert, zal het wel unieke stijlkenmerken nabootsen…
+						</aside>
+					</section>
+
+				</section>
+				<section>
+					<!-- vraag -->
+					<section>
+						VRAAG (REPEAT): Kunnen computers creatief zijn
+					</section>
+					<!-- PERCEPTION - ChatGPT prompt -->
+					<section data-background-image="img/chatgptprompt.gif"> 
+						<h2 class="r-fit-text">prompt engineering</h2>
+						<aside class="notes">
+							Maar dan nog zelfs al geef je een model de toestemming om picasso te plagieren… het ziet er dan nog niet vanzelf goed uit. We moeten nog enorm veel sturen. Hoe je zo’n model benadert en een vraag stelt, dat heet “prompt engineering” en dat bepaalt waar in een model je gaat zoeken naar een antwoord op je vraag. Hoe interpreteert een model wat je vraagt. Een groot deel daarvan gebeurt bv in het geval van ChatGPT achter de schermen en heeft vooral met menselijke intelligentie te maken. Een groot deel van menselijk intelligentie heeft te maken met dingen die niet in het brein gebeuren, maar in de context, communicatie of zintuiglijke ervaringen… Allemaal zaken die chatGPT nog niet meepakt… 
+						</aside>
+					</section>
+					<!-- IMPERFECTIONS -->
+					<section>
+						
+						<div class="r-stack r-stretch">
+							<h1 class="fragment fade-out"> Embrace Imperfections </h1>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_clusterAnalysis.jpg">
+								<h6>Cluster Analysis</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_convertTheRhythmToMelody.jpg">
+								<h6>Convert The Rhythm To A Melody</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_fillEveryBeatWithSomething.jpg">
+								<h6>fill Every Beat With Something</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_GetYourNeckMassaged.jpg">
+								<h6>Get Your Neck Massaged</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_ImagineTheMusicAsASetOfDisconnectedEvents.jpg">
+								<h6>Imagine The Music As A Set Of Disconnected Events</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_theTapeIsNowTheMusic.png">
+								<h6>the Tape Is Now The Music</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/SDOS_TwistTheSpine.jpg">
+								<h6>twist the spine</h6>
+							</div>												
+						</div>
+						<div class="credits">Oblique Diffusions - 2022</div>
+					<aside class="notes">
+						Doe je dat niet dan komen de imperfecties van het intelligentie(model) snel bovendrijven, en dat VOEL je als mens. UNCANNY
+					</aside>	
+					</section>
+					
+					<section>
+						<div class="r-stack r-stretch">
+							<h1 class="fragment fade-out"> Analyse </h1>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ror0.png">
+								<h6>Psychoananalyst: What do you see?</h6>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ror2.png">
+								<h6>Computer: ...</h6>
+							</div>
+							
+						</div>
+						<div class="credits">Deep Dream Analysis - 2017</div>
+						<aside class="notes">
+							De mens blijft streven naar AG, en haalt daar miljoenen voor op, maar als het gaat over creativiteit heeft de mens nog steeds een beentje voor. Een associatief brein heeft dan ook minder te maken met kansberekening, maar wel met verbindingen. 
+							Vragen we aan een AI om associatief te zijn, dan voel je als mens ook snel de beperkingen
+						</aside>
+					</section>
+					<!-- DataDrivenDreams -->
+					<section>
+						<div class="r-stack r-stretch">
+							<h1 class="fragment fade-out"> Data Driven Dreams </h1>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd1.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd2.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd3.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd4.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd5.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd6.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd7.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd8.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd9.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd10.jpg" />
+							</div>
+							<div class="fragment fade-in-then-out">
+								<img src="img/ddd11.jpg" />
+							</div>
+						</div>
+					</section>
+					<section>
+						<h1>ZIEL</h1>
+						<img class="fragment" src="img/mozart.jpg" data-fragment-index="0" width="300">
+						<img class="fragment" src="img/mozart2.jpg" data-fragment-index="1" width="300">
+						<img class="fragment" src="img/mozart3.jpg" data-fragment-index="2" width="300">
+						<h6 class="fragment" data-fragment-index="3">easy peasy</h6>	
+						<aside class="notes"> Mozart, but also Terry Riley (in C)
+						De ziel van de computer begrijpt het nog niet…
+						Maar AI voelt ook niks… AI kan heel gericht dobbelstenen gooien, en die dobbelstenen zijn “loaded”. Daarmee bedoel ik, dat die niet 1 kans op 6 hebben om een 6 te gooien, neen de gewichten zijn er op gericht om naar een specifiek resultaat te werken, waarop het model getraind is om ons blij te maken. Het is dus een kansspel, en de computer speelt vals…
+						Nu vinden we dat niet zo erg, we zijn blij met het resultaat. (Soms toch)
+						Mozart deed het ook al zo…zijn kansspel was veel meer gestuurd en het model was ontelbaar keer kleiner, maar het principe hetzelfde. (Marketing?)
+						</aside>
+					</section>
+					<section data-background-video="img/botboploop.mp4" data-background-video-loop="">
+						<h1 class="">BOTBOP</h1>
+						<h3 class="fragment" data-fragment-index="0"><a href="https://www.youtube.com/watch?v=88J_FqUyX0E">Integers &amp; Strings</a></h3>
+						<div class="caption"> <a href="https://www.youtube.com/watch?v=88J_FqUyX0E">Botbop - Integers &amp; Strings</a> </div>
+						<aside class="notes">
+							Om muziek te maken met AI zijn we er dus nog niet, maar wij hebben er met botbop wel iets op gevonden… Botbop is een band, de naam komt voort uit “robot bebop”. Opgestart in tijdens corona, als een onderzoek om te kijken of we een computerbandlid zouden kunnen maken vormen om mee samen te spelen kreeg het project een interessante wending toen we uitgenodigd werden om op Sonar in Barcelona te spelen. De vraag was of we een live instrument konden toevoegen. Andrew Claes had al langer een idee op de plank liggen om met strijkers te spelen en de beats van Dago Sondervan en live AI gestuurde compositie van Andrew werden met 8 maten vertraging omgezet in partituren die een strijkkwartet a prima vista interprteerde en speelden.
+							En daar ligt het verschil. We gebruiken de AI niet gewoon om muziek te maken. Neen, we voeden de AI met live input. We voelen wat er nodig is op dat moment. De AI genereert, volgens een model dat we voldoende kunnen sturen extra muziek die dan _nog_ eens geïnterpreteerd wordt door mensen. Keep the humans in the loop! Experiment and do stuff that has not been done before
+						</aside>
+					</section>
+				</section>
+
+				<section> <!-- Combine - brains -->
+					<h1>Combine</h1>
+					
+							<div class="fifth"><img class="plain fragment" data-fragment-index="0" src="img/brainelectric.png"></div>
+							<h1 class="fifth fragment" data-fragment-index="0">+</h1>
+							<div class="fifth"><img class="plain" src="img/brain.png"></div>
+							<h1 class="fifth fragment" data-fragment-index="1">=</h1>
+							<div class="fifth"><img class="plain fragment" data-fragment-index="1" src="img/brainelectricbio.png"></div>
+					
+					<h6 class="fragment" data-fragment-index="2" >it's not a competition</h6>
+					<h6 class="fragment" data-fragment-index="3">Don't be afraid:</h6>
+					<h6 class="fragment" data-fragment-index="3">connect, create, collaborate</h6>
+
+					<aside class="notes">
+						the process should have 
+							Brain by Eucalyp from the Noun Project
+							Brain by BomSymbols from the Noun Project
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

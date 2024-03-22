@@ -1,0 +1,63 @@
+.coltext {
+    background-color: rgba(234, 91, 55, 0.61);
+}
+
+.caption {
+    font-size: x-small;
+    padding: 5px;
+    background-color: rgba(240, 255, 255, 0.151);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.backdrop {
+    background-color: rgba(192, 250, 0, 0.473);
+}
+
+.lucalogo {
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+}
+.kaoslogo {
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    width: 150px;
+}
+.half {
+    float: left;
+    width: 50% !important;
+  }
+
+.third {
+    float: left;
+    width: 33% !important;
+  }
+
+.twothird {
+    float: left;
+    width: 66% !important;
+  }
+
+  .normalfont{
+    font-size: initial;
+  }
+       
+.forth {
+float: left;
+width: 25% !important;
+}
+.fifth{
+float: left;
+width: 20% !important;
+}
+
+.credits{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    background-color: black;
+    font-size: xx-small;
+}
