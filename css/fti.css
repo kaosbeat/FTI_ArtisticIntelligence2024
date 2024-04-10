@@ -15,10 +15,11 @@
     background-color: rgba(192, 250, 0, 0.473);
 }
 
-.lucalogo {
+.leftlogo {
     position: absolute;
     bottom: 10px;
     left:10px;
+    width: 150px;
 }
 .kaoslogo {
     position: absolute;
